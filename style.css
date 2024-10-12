@@ -1,0 +1,350 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.header{
+    height: 80px;
+    width: inherit;
+    background-color: #EFBC9B;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+#brand-logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 24px;
+}
+#logo-img{
+    height: 60px;
+    width: 60px;
+}
+#logo-img:hover{
+    height: 62px;
+    width: 62px;
+    transition: 0.1s ease-in-out;
+}
+#brand-name{
+    font-size: 2.2rem;
+    color: #38265a;
+    font-weight: bold;
+    text-align: center;
+}
+#brand-name:hover{
+    color: #7E60BF;
+    transition: 0.1s ease-in-out;   
+}
+#header-space{
+    flex: 1;
+}
+.header a{
+    font-size: 1.1rem;
+    color: #433878;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding-inline: 6px;
+}
+#dog-food:hover, #cat-food:hover, #about:hover, #contact:hover{
+    border-bottom: 4px solid #433878;
+    color: #7E60BF;
+    transition: 0.1s ease-in-out;
+}
+#dog-food i, #cat-food i{
+    font-size: 24px;
+}
+#follow{
+    color: #EFBC9B;
+    background-color: #433878;
+    border-radius: 6px;
+    padding-inline: 18px;
+    padding-block: 6px;
+    margin-right: 24px;
+}
+#follow:hover{
+    padding-inline: 20px;
+    padding-block: 8px;
+    transition: 0.1s ease-in-out;
+}
+.img-content{
+    height: auto;
+    width: inherit;
+    background-color: #9CAFAA;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    --mask:
+          radial-gradient(34.99px at 50% calc(100% - 48px),#000 99%,#0000 101%) calc(50% - 60px) 0/90px 100%,
+          radial-gradient(34.99px at 50% calc(100% + 18px),#0000 99%,#000 101%) 50% calc(100% - 30px)/90px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+}
+#catdog-img{
+    height: 300px;
+    width: 300px;
+}
+#buynow-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#buynow-wrapper h1{
+    font-size: 2rem;
+    width: 250px;
+    text-align: center;
+    color: #433878;
+}
+#buy-now{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #433878;
+    font-weight: bold;
+    background: #EFBC9B;
+    padding: 12px;
+    border-radius: 6px;
+}
+#buy-now:hover{
+    color: #EFBC9B;
+    background-color: #433878;
+    padding: 14px;
+    transition: 0.3s ease-in-out;
+}
+.dryfood-content{
+    height: auto;
+    width: inherit;
+    background-color: #7E60BF;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+    padding-top: 48px;
+    gap: 24px;  
+}
+#dryfood-img{
+    height: 180px;
+    width: 180px;
+    background-color: #EFBC9B;
+    border-radius: 50%;
+    padding: 12px;
+}
+#buynowdry-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+}
+#buynowdry-wrapper h1{
+    font-size: 2rem;
+    text-align: center;
+    color: #EFBC9B;
+}
+#buynowdry-wrapper h3{
+    font-size: 1.1rem;
+    text-align: center;
+    color: #EFBC9B;
+    margin-top: -12px;
+}
+#buybtn-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+#buydry-now{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #EFBC9B;
+    font-weight: bold;
+    background-color: #433878;
+    padding-block: 12px;
+    padding-inline: 24px;
+    border-radius: 6px;
+}
+#buydry-now:hover{
+    color: #433878;
+    background-color: #EFBC9B;
+    padding-block: 14px;
+    padding-inline: 26px;
+    transition: 0.3s ease-in-out;
+}
+.footer{
+    height: auto;
+    width: inherit;
+    background-color: #38265a;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+    gap: 24px;
+}
+#credit{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#credit a{
+    font-size: 1.5rem;
+    color: #EFBC9B;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+#credit h3{
+    font-size: 1rem;
+    color: #EFBC9B;
+    width: 100%;
+}
+#navigation{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 2px solid #EFBC9B;
+    border-right: 2px solid #EFBC9B;
+    padding: 12px;
+}
+#navigation h2{
+    font-size: 1rem;
+    color: #EFBC9B;
+}
+#shopee-nav, #lazada-nav{
+    background-color: #EFBC9B;
+    text-align: center;
+    padding-block: 6px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #38265a;
+    font-weight: bold;
+    width: 100%;
+}
+#shopee-nav:hover, #lazada-nav:hover{
+    background-color: #7E60BF;
+    color: #EFBC9B;
+    padding-block: 8px;
+    transition: 0.3s ease-in-out;
+}
+#socials{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+#socials h3{
+    font-size: 1.1rem;
+    color: #EFBC9B;
+}
+#socials i {
+    color: #EFBC9B;
+    font-size: 24px;
+    padding-right: 12px;
+}
+#news-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#news-letter{
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    border: 2px solid #EFBC9B;
+    background-color: transparent;
+    color: #EFBC9B;
+}
+#news-letter::placeholder{
+    color: #EFBC9B;
+}
+#letter-btn{
+    border: 2px solid #EFBC9B;
+    margin-left: -2px;
+    padding-top: 8px;
+    padding-left: 12px;
+} 
+#letter-btn i{
+    font-size: 18px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        width: inherit;
+    }
+    .header{
+        width: 100%;
+        height: 100px;
+    }
+    .header a{
+        font-size: 1rem;
+    }
+    #brand-logo{
+        margin-right: -12px;
+    }
+    #brand-name{
+        font-size: 1.6rem;
+        text-align: right;
+    }
+    #dog-food, #cat-food{
+        display: none;
+    }
+    #follow{
+        font-size: 0.9rem;
+        border-radius: 6px;
+        padding-inline: 12px;
+        margin-right: 24px;
+    }
+    #dryfood-img{
+        height: 150px;
+        width: 150px;
+    }
+    .img-content, .dryfood-content{
+        width: 100%;
+        gap: 0px;
+    }
+    .dryfood-content{
+        padding-top: 60px;
+        flex-direction: column-reverse;
+    }
+    .footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    #navigation{
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #EFBC9B;
+        padding-inline: 48px;
+    }
+    #socials{
+        border-top: 2px solid #EFBC9B;
+        padding-inline: 48px;
+    }
+}
